@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS genre(
+    id SERIAL PRIMARY KEY,
+    slug TEXT,
+    name TEXT
+)

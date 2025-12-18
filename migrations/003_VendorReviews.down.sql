@@ -1,0 +1,1 @@
+drop TABLE if not EXISTS vendor_reviews

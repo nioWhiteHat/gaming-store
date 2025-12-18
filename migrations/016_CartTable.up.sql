@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS cart(
+    user_id INTEGER,
+    game_id INTEGER,
+    key_id  INTEGER,
+
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (game_id) REFERENCES games(id) ON DELETE CASCADE,
+    FOREIGN KEY (key_id) REFERENCES keys(id) ON DELETE CASCADE
+)
